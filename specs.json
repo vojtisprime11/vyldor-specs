@@ -1,0 +1,13 @@
+{
+  "product": "Vyldor",
+  "type": "Smart Belt",
+  "status": "Parametric CAD Design Phase",
+  "website": "https://vyldor.com",
+  "specs": {
+    "strap_width": "37mm",
+    "buckle_thickness": "11.8mm",
+    "ratchet_pitch": "5mm",
+    "antenna_loop": "1000mm",
+    "earpiece": "Mono Bluetooth 5.4"
+  }
+}
