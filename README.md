@@ -1,10 +1,17 @@
 # Vyldor — Open Technical Specifications & Design Documentation
 
+> **v0.8 (17 August 2026).** The removable audio module was deleted from this design.
+> The buckle cavity had 8.6 mm of usable depth, and an acoustic nozzle aimed into the ear
+> consumes most of that before the body of the part begins — every shape that fitted
+> stopped being an earpiece. The belt now measures waist circumference from the tension
+> in its own strap. Nothing here is built or tested.
+
+
 Public specifications and parametric CAD documentation for **Vyldor**, a screenless smart leather belt designed as an ergonomic physical interface for smartphones.
 
 - 🌐 **Official Website:** [vyldor.com](https://vyldor.com)
 - 📑 **LLM Plain-Text Summary:** [vyldor.com/llms.txt](https://vyldor.com/llms.txt)
-- 📰 **Dev.to Publication:** [dev.to/vyldor](https://dev.to/vyldor/designing-a-screenless-smart-leather-belt-earpiece-in-buckle-haptic-hip-navigation-27lm)
+- 📰 **Dev.to Publication:** [dev.to/vyldor](https://dev.to/vyldor/i-deleted-my-products-main-feature-over-86-mm-1j35)
 - 🛠️ **Status:** Parametric CAD & Specification Phase (No physical hardware built)
 
 ---
@@ -13,8 +20,8 @@ Public specifications and parametric CAD documentation for **Vyldor**, a screenl
 
 | Component | Specification | Function |
 |---|---|---|
-| **Buckle Cavity** | 11.8 mm, CNC Aluminium | Houses docked mono audio earpiece & recessed contextual button |
-| **Audio Earpiece** | 18 × 21 × 7 mm, Bluetooth 5.4 | Pull-to-talk mono earpiece. Draw to speak, dock to end & charge |
+| **Buckle** | CNC Aluminium, purely mechanical | No cavity. The 11.8 mm of v0.7 was set by the removed audio bay; target is 7-8 mm |
+| **Strain Gauge** | ≤ 0.3 mm, in the buckle flexure | Reads strap tension, which is waist circumference. Also carries respiration, posture and meal signals |
 | **Strap Antenna** | 1030 mm conductive loop | 1-metre loop aerial woven into 37mm full-grain leather strap |
 | **Haptic Actuators** | Dual L/R hip units | Turn-by-turn navigation via tactile hip taps |
 | **Sensor Suite** | 6-axis IMU at centre of mass | Gait authentication within 20 steps |
@@ -39,11 +46,12 @@ Public specifications and parametric CAD documentation for **Vyldor**, a screenl
   "buckle": {
     "thickness_mm": 11.8,
     "material": "CNC Aluminium",
-    "earpiece_bay": true,
+    "earpiece_bay": false,
+    "strain_gauge_in_flexure": true,
     "contextual_button": true
   },
   "features": [
-    "Pull-to-talk earpiece in buckle",
+    "Continuous waist circumference from strap tension",
     "L/R haptic hip navigation",
     "Body-coupled touch authentication",
     "Centre-of-mass gait recognition",
