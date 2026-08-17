@@ -5,9 +5,11 @@
   "website": "https://vyldor.com",
   "specs": {
     "strap_width": "37mm",
-    "buckle_thickness": "11.8mm",
+    "buckle_thickness": "target 7-8mm (11.8mm in v0.7 was set by the removed audio bay)",
     "ratchet_pitch": "5mm",
     "antenna_loop": "1000mm",
-    "earpiece": "Mono Bluetooth 5.4"
-  }
+    "strain_gauge": "<=0.3mm, in the buckle flexure",
+    "measures": "waist circumference, continuously, from strap tension"
+  },
+  "version": "0.8.0"
 }
