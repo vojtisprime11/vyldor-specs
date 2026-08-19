@@ -32,7 +32,25 @@ To je rozdíl mezi konceptem a důkazem, a je to rozdíl za pět set korun.
 | Kožený pásek, který nelituješ | 1 | — | Donor. Bude zničený. |
 | Krejčovský metr | 1 | ~30 Kč | **Referenční pravda.** Bez něj celý test nic neznamená. |
 
-Zdroje: Laskarduino, Drátek.cz, GM Electronic, nebo AliExpress (levnější, 2–3 týdny).
+Zdroje: LaskaKit, Drátek.cz, GM Electronic, Arduino-shop, nebo AliExpress (levnější,
+2–3 týdny dodání).
+
+### Pozor při objednávání tenzometru — tady se dá snadno koupit špatná věc
+
+Pod názvem „tenzometr BF350" se prodávají **dvě různé věci** a jen jedna z nich funguje
+se zapojením níže:
+
+| | Co to je | Použitelné? |
+|---|---|---|
+| **Holý tenzometr** | Kousek oranžové fólie s mřížkou a dvěma drátky. Žádná destička. Změříš na něm ohmmetrem ~350 Ω. | **Ano, tenhle chceš** |
+| **Modul / „senzor ohýbání"** | Malá plošňák s trimrem, LED a piny VCC/GND/OUT. Napájí se 5 V a dává analogové napětí. | **Ne.** Má vlastní zesilovač a s HX711 se pere. |
+
+Rozpoznávací znak: **jestli to má napájecí pin, není to tenzometr, ale hotový obvod.**
+Modul se dá použít, ale pak potřebuješ úplně jiné zapojení a jinou analýzu — a přijdeš
+o teplotní kompenzaci, která je na těle to hlavní.
+
+Když si nejsi jistý, hledej v popisu „350 Ω" a „foil strain gauge" a v obrázku fólii
+bez plošného spoje. Cena holého tenzometru je pod stovku za kus.
 
 ---
 
