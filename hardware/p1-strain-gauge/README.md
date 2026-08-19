@@ -6,6 +6,10 @@ dokud tenhle nedopadne. Stojí zhruba **500 Kč a jedno odpoledne.**
 Není to prototyp pásku. Je to donor pásek, jeden tenzometr a záznam do souboru.
 Cílem je jediný graf, na který se dá ukázat.
 
+> **Než tohle začneš, udělej [P0](../p0-luggage-scale/).** Je zadarmo, trvá dvacet minut
+> a odpoví na to, jestli je signál vůbec dost velký — kufrovou váhou. Když P0 vyjde
+> NO-GO, tenzometry nekupuj.
+
 ---
 
 ## Proč to rozhoduje o penězích, ne jen o technice
